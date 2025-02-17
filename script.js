@@ -66,6 +66,12 @@ function getExclusionSet() {
 function copyPassword() {
     const textToCopy = textArea.value;
     navigator.clipboard.writeText(textToCopy);
+    copyBtn.innerHTML = 'Password Copied!';
+    copyBtn.classList.add('clicked');
+    setTimeout(function() {
+        copyBtn.innerHTML = 'Copy Password';
+        copyBtn.classList.remove('clicked');
+    }, 2000);
 }
 genBtn.addEventListener('click', writePassword);
 copyBtn.addEventListener('click', copyPassword);

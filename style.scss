@@ -35,8 +35,11 @@ $boxshadow1: 0 2px 5px 0 rgba(0,0,0,0.2);
     letter-spacing: .5px;
     border-radius: 8px;
     box-shadow: $boxshadow1;
-    &:hover,
-    &:focus {
+    transition: 100ms;
+    &:hover {
+        background-color: $color3;
+    }
+    &.clicked {
         background-color: $color3;
     }
 }
@@ -182,6 +185,10 @@ label {
                     box-shadow: $boxshadow1;
                     padding: 20px;
                 }
+                label {
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
                 textarea {
                     width: 100%;
                     padding: 2px;
@@ -196,6 +203,7 @@ label {
                 button {
                     @include button;
                     margin: 18px 0 0 0;
+                    width: 210px;
                 }
             }
         }
