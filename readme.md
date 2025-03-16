@@ -1,5 +1,7 @@
 # Pretty Password Generator
 
+[deployed page](https://toricubes.github.io/password-generator/)
+
 ## Description
 
 Password generator that allows the user to choose from the following character sets:
